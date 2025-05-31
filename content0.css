@@ -1,0 +1,19 @@
+@keyframes content0-size {
+    to {
+        width: 0;
+    }
+}
+
+#content0 {
+    height: 500vh;
+    width: 100vw;
+
+    view-timeline-name: --section-content0;
+    overflow-x: clip;
+}
+
+.content0-side-bar-size {
+    animation: content0-size linear forwards;
+    animation-timeline: --section-content0;
+    animation-range: contain 0% contain 70%;
+}

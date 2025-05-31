@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
