@@ -1,16 +1,11 @@
-@keyframes content0-size {
-    from {
-        width: 50%;
-    }
-    to {
-        width: 0;
-    }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
-@-webkit-keyframes content0-size {
-    from {
-        width: 50%;
-    }
+@keyframes content0-size {
     to {
         width: 0;
     }
@@ -25,10 +20,6 @@
 }
 
 .content0-side-bar-size {
-    -webkit-animation: content0-size linear forwards;
-    -webkit-timeline: --section-content0;
-    -webkit-range: contain 0% contain 70%;
-    
     animation: content0-size linear forwards;
     animation-timeline: --section-content0;
     animation-range: contain 0% contain 70%;
