@@ -1,8 +1,8 @@
 @media (prefers-reduced-motion: reduce) {
-    * {
-        animation: none !important;
-        transition: none !important;
-    }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 @keyframes content0-size {
@@ -19,12 +19,8 @@
     overflow-x: clip;
 }
 
-@supports not (animation-timeline: view()) {
-
-    /* Fallback para mobile (que não tem suporte ainda) */
-    .content0-side-bar-size {
-        animation: content0-size linear forwards;
-        animation-timeline: --section-content0;
-        animation-range: contain 0% contain 70%;
-    }
+.content0-side-bar-size {
+    animation: content0-size linear forwards;
+    animation-timeline: --section-content0;
+    animation-range: contain 0% contain 70%;
 }
