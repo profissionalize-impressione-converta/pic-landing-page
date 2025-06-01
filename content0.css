@@ -1,3 +1,9 @@
+@keyframes content0-size {
+    to {
+        width: 0;
+    }
+}
+
 @-webkit-keyframes content0-size {
     to {
         width: 0;
@@ -14,6 +20,7 @@
 
 .content0-side-bar-size {
     -webkit-animation: content0-size linear forwards;
-    -webkit-animation-timeline: --section-content0;
-    -webkit-animation-range: contain 0% contain 70%;
+    animation: content0-size linear forwards;
+    animation-timeline: --section-content0;
+    animation-range: contain 0% contain 70%;
 }
