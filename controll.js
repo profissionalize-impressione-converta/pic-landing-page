@@ -30,9 +30,9 @@ const section1 = (section) => {
     if (scrollPercent >= final) {
         div1.style.width = `0%`;
     } else if (scrollPercent <= initial) {
-        div1.style.width = `100%`;
+        div1.style.width = `100vw`;
     } else {
         const percentInRange = ((final - scrollPercent) * 100) / (final - initial);
-        div1.style.width = `${percentInRange}%`;
+        div1.style.width = `${percentInRange}vw`;
     }
 }
