@@ -1,33 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Landing page</title>
+    <title>PIC</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='stick.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='content0.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='content1.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        #output {
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            background: black;
-            color: white;
-            padding: 10px;
-            border-radius: 8px;
-            font-family: monospace;
-            z-index: 11;
-        }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src='main.js'></script>
 </head>
 
 <body>
-    <div id="output">Scroll: 0%</div>
 
     <div class="fixed z-10 flex justify-center w-dvw p-3">
         <div class="bg-white rounded-full bg-white/50 backdrop-blur-md shadow-md flex items-center">
@@ -39,10 +25,12 @@
         </div>
     </div>
 
-    <section id="content0">
-        <div class="stick">
-            <div class="flex w-[200vw] md:w-[100vw]">
-                <div class="w-[100vw] bg-gray-200 flex justify-center items-center h-dvh content0-side-bar-size">
+    <section class="h-[4000px]">
+        <div class="sticky top-0 overflow-hidden">
+            <div class="flex flex-row lg:flex-row w-[200vw] lg:w-screen h-screen">
+
+                <!-- Div da esquerda -->
+                <div class="w-screen lg:w-1/2 h-screen flex justify-center items-center bg-gray-200 shrink-0 box-size">
                     <div>
                         <div class="text-nowrap text-4xl md:text-7xl font-thin mb-20 flex items-center">PIC <span
                                 class="text-4xl font-thin ml-5">•</span></div>
@@ -51,7 +39,9 @@
                         <div class="text-nowrap text-4xl md:text-7xl">CONVERTA</div>
                     </div>
                 </div>
-                <div class="w-[100vw] bg-gray-400 flex justify-center items-center h-dvh">
+
+                <!-- Div da direita -->
+                <div class="w-screen lg:flex-1 h-screen flex justify-center items-center bg-gray-400 shrink-0">
                     <div>
                         <div class="text-nowrap text-4xl md:text-7xl">LANDING PAGES</div>
                         <div class="text-nowrap text-4xl md:text-7xl">COM</div>
@@ -61,167 +51,12 @@
                         <div class="text-nowrap text-4xl md:text-7xl">CONVERTEM</div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="content1" class="bg-gray-200">
-        <div class="stick">
-            <div class="p-5">
-                <div class="flex justify-center items-center h-[50vh] pt-20 opacity-0 content1-subtitle">
-                    <p class="text-2xl md:text-4xl w-300 text-center">Crie uma presença digital marcante com efeitos
-                        modernos
-                        e
-                        interativos que
-                        aumentam o
-                        interesse dos visitantes e geram mais contatos.
-                    </p>
-                </div>
-
-                <div class="flex justify-center items-center h-[50vh] pb-50 opacity-0 content1-button">
-                    <a href="https://wa.me/5519971461355"
-                        class="text-sm md:text-3xl rounded-full p-6 bg-[#25d366] cursor-pointer">
-                        🎯 Quero uma landing page animada!
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="content1">
-        <div class="stick">
-            <div class="p-5">
-                <div class="flex justify-center items-center h-[50vh] pt-20 opacity-0 content1-subtitle">
-                    <p class="text-4xl w-300 text-center">
-                        Por que animações com scroll?
-                    </p>
-                </div>
-
-                <div class="flex justify-center items-center h-[50vh] pb-50 opacity-0 content1-button">
-                    <div>
-                        <div class="text-lg md:text-xl ">👀 Prendem a atenção de quem acessa</div>
-                        <div class="text-lg md:text-xl ">📈 Aumentam o tempo de permanência no site</div>
-                        <div class="text-lg md:text-xl ">💡 Diferenciam sua marca da concorrência</div>
-                        <div class="text-lg md:text-xl ">🔁 Guiam o visitante de forma fluida até a ação</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div id="about"></div>
-    </section>
-
-    <section id="content1">
-        <div class="stick">
-            <div class="p-5">
-                <div class="flex justify-center items-center h-[50vh] pt-20 opacity-0 content1-subtitle">
-                    <div class="grid gap-10">
-                        <div class="flex justify-center">
-                            <p class="text-4xl w-300 text-center text-wrap">
-                                O que está incluso?
-                            </p>
-                        </div>
-                        <div class="flex justify-center">
-                            <p class="text-2xl w-[100vw] text-center font-light text-wrap">
-                                Você recebe uma landing page moderna, rápida e feita sob medida com:
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-center items-center h-[50vh] pb-50 opacity-0 content1-button">
-                    <div>
-
-                        <div class="text-lg md:text-xl ">🎬 Animações suaves ativadas ao rolar a página</div>
-                        <div class="text-lg md:text-xl ">🖼️ Design responsivo (celular, tablet e desktop)</div>
-                        <div class="text-lg md:text-xl ">⚙️ Otimização para SEO e performance</div>
-                        <div class="text-lg md:text-xl ">📍 Foco total na conversão (captar leads ou contatos)</div>
-                        <div class="text-lg md:text-xl ">🎨 Identidade visual adaptada à sua marca</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="content1">
-        <div class="stick">
-            <div class="p-5">
-                <div class="flex justify-center items-center h-[50vh] pt-20 opacity-0 content1-subtitle">
-                    <div class="grid gap-10">
-                        <p class="text-4xl w-300 text-center">
-                            Como funciona?
-                        </p>
-                    </div>
-                </div>
-
-                <div class="flex justify-center items-center h-[50vh] pb-50 opacity-0 content1-button">
-                    <div>
-                        <div class="text-lg md:text-xl ">📞 Conversa rápida para entender seu negócio</div>
-                        <div class="text-lg md:text-xl ">✍️ Criação de layout exclusivo com sugestões de animação</div>
-                        <div class="text-lg md:text-xl ">💻 Desenvolvimento da página (5 a 7 dias úteis)</div>
-                        <div class="text-lg md:text-xl ">✅ Apoio com domínio e opções de hospedagem</div>
-
-                        <div class="flex justify-center">
-                            <a href="https://wa.me/5519971461355"
-                                class="text-sm md:text-3xl rounded-full p-6 bg-[#25d366] cursor-pointer mt-30">
-                                🎯 Quero uma landing page animada!
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="content1">
-        <div class="stick">
-            <div class="bg-gray-200 h-dvh w-dvw pt-30">
-                <div class="flex justify-center">
-                    <div class="w-[90%]">
-                        <div class="border-t-2 border-gray-300 pt-5 opacity-0 content1-subtitle">
-                            <div class="text-nowrap text-4xl md:text-7xl font-thin mb-20 flex items-center">
-                                PIC <span class="text-4xl font-thin ml-5">•</span>
-                            </div>
-                        </div>
-
-                        <div class="grid gap-10 pt-10 opacity-0 content1-button">
-                            <div class="flex justify-center">
-                                <a href="https://wa.me/5519971461355"
-                                    class="text-sm md:text-3xl rounded-full p-6 bg-[#25d366] cursor-pointer">
-                                    🎯 Quero uma landing page animada!
-                                </a>
-                            </div>
-                            <div class="flex justify-center">
-                                <p class="text-2xl md:text-3xl text-center">
-                                    Ou mande um email:
-                                </p>
-                            </div>
-                            <div class="flex justify-center">
-                                <p class="text-1xl md:text-2xl text-center font-light text-wrap">
-                                    cristianoandrade.deaguiar@gmail.com
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div id="contact"></div>
-
+<div id="contact"></div>
 </body>
-<script>
-    window.addEventListener("scroll", () => {
-        const scrollTop = window.scrollY || document.documentElement.scrollTop;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollPercent = (scrollTop / docHeight) * 100;
-
-
-        
-        document.getElementById("output").textContent = `Scroll: ${scrollPercent.toFixed(1)}%`;
-    });
-</script>
 
 </html>
