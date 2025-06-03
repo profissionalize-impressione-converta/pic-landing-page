@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             trigger: ".box-size",
             start: "top",
             end: "top -2000",
-            scrub: true,
-            markers: true
+            scrub: true
         },
         width: "0vw"
     })
