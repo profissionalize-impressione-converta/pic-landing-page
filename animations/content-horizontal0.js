@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             start: "top top",
             end: () => "+=" + document.querySelector("#content-horizontal0").scrollHeight,
             scrub: true,
-            markers: true
+            markers: false
         },
     });
 });
