@@ -12,6 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <script src='animations/content0.js'></script>
     <script src='animations/content1.js'></script>
+    <script src='animations/content-horizontal0.js'></script>
 </head>
 
 <body>
@@ -26,13 +27,12 @@
         </div>
     </div>
 
-    <section id="content0" class="h-[3500px]">
+    <section id="content0" class="h-[2500px]">
         <div class="sticky top-0 overflow-hidden">
             <div class="flex flex-row lg:flex-row w-[200vw] lg:w-screen h-screen">
 
                 <!-- Div da esquerda -->
-                <div
-                    class="w-screen lg:w-1/2 h-screen flex justify-center items-center bg-gray-200 shrink-0 content0-box-size">
+                <div class="w-screen lg:w-1/2 h-screen flex justify-center items-center bg-gray-200 content0-box-size">
                     <div>
                         <div class="text-nowrap text-4xl md:text-7xl font-thin mb-20 flex items-center">PIC <span
                                 class="text-4xl font-thin ml-5">•</span></div>
@@ -43,14 +43,12 @@
                 </div>
 
                 <!-- Div da direita -->
-                <div class="w-screen lg:flex-1 h-screen flex justify-center items-center bg-gray-400 shrink-0">
+                <div class="w-screen lg:flex-1 h-screen flex justify-center items-center bg-gray-400">
                     <div>
                         <div class="text-nowrap text-4xl md:text-7xl">LANDING PAGES</div>
-                        <div class="text-nowrap text-4xl md:text-7xl">COM</div>
-                        <div class="text-nowrap text-4xl md:text-7xl">ANIMAÇÕES</div>
-                        <div class="text-nowrap text-4xl md:text-7xl">QUE</div>
-                        <div class="text-nowrap text-4xl md:text-7xl">ENCANTAM E</div>
-                        <div class="text-nowrap text-4xl md:text-7xl">CONVERTEM</div>
+                        <div class="text-nowrap text-4xl md:text-7xl">SISTEMAS WEB E</div>
+                        <div class="text-nowrap text-4xl md:text-7xl">APLICATIVOS MOBILE</div>
+                        <div class="text-nowrap text-4xl md:text-7xl">SOB MEDIDA</div>
                     </div>
                 </div>
 
@@ -60,22 +58,29 @@
 
     <section id="content1" class="h-[2500px]">
         <div class="sticky top-0 overflow-hidden">
-            <div class="grid h-dvh flex justify-center items-center">
+            <div class="grid h-dvh flex justify-center items-center bg-gray-200 p-6">
                 <div class="flex justify-center items-center mt-20 opacity-0 content1-item1">
-                    <p class="text-2xl md:text-4xl text-center">Crie uma presença digital marcante com efeitos
-                        modernos
-                        e
-                        interativos que
-                        aumentam o
-                        interesse dos visitantes e geram mais contatos.
+                    <p class="text-2xl md:text-4xl text-center max-w-300">
+                        Do site à automação, entrego soluções digitais modernas, rápidas e eficientes para você atrair,
+                        vender e escalar.
                     </p>
                 </div>
 
-                <div class="flex justify-center items-center mt-20 opacity-0 content1-item2">
-                    <a href="https://wa.me/5519971461355"
-                        class="text-sm md:text-3xl rounded-full p-6 bg-[#25d366] cursor-pointer">
-                        🎯 Quero uma landing page animada!
-                    </a>
+                <div class="grid gap-5">
+
+                    <div class="flex justify-center items-center opacity-0 content1-item2">
+                        <a href="https://wa.me/5519971461355"
+                            class="text-sm md:text-2xl rounded-full p-8 bg-[#25d366] cursor-pointer">
+                            🚀 Solicitar Orçamento
+                        </a>
+                    </div>
+
+                    <div class="flex justify-center items-center opacity-0 content1-item2">
+                        <a href="https://wa.me/5519971461355"
+                            class="text-sm md:text-2xl rounded-full p-8 bg-black text-white cursor-pointer">
+                            📱 Ver Portfólio
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,19 +88,20 @@
 
     <section id="content2" class="h-[2500px]">
         <div class="sticky top-0 overflow-hidden">
-            <div class="grid h-dvh flex justify-center items-center">
-                <div class="flex justify-center items-center mt-20 opacity-0 content2-item1">
-                    <p class="text-2xl md:text-4xl text-center">Crie uma presença digital marcante com efeitos
-                        Por que animações com scroll?
+            <div class="grid h-dvh flex justify-center items-center p-6">
+                <div class="flex justify-center items-center mt-30 opacity-0 content2-item1">
+                    <p class="text-2xl md:text-4xl text-center max-w-300">
+                        ✨ Landing Pages Profissionais
                     </p>
                 </div>
-
-                <div class="flex justify-center items-center mt-20 opacity-0 content2-item2">
+                <div
+                    class="flex justify-center items-center opacity-0 border-2 rounded-lg border-gray-300 content2-item2">
+                    <img src="img/landingpage.gif" class="w-[90%] lg:max-w-300 " alt="">
+                </div>
+                <div class="flex justify-center items-center  opacity-0  mb-30 content2-item2">
                     <div>
-                        <div class="text-md md:text-xl ">👀 Prendem a atenção de quem acessa</div>
-                        <div class="text-md md:text-xl ">📈 Aumentam o tempo de permanência no site</div>
-                        <div class="text-md md:text-xl ">💡 Diferenciam sua marca da concorrência</div>
-                        <div class="text-md md:text-xl ">🔁 Guiam o visitante de forma fluida até a ação</div>
+                        <div class="text-md md:text-xl ">Páginas com animações, foco em conversão e identidade visual
+                            moderna.</div>
                     </div>
                 </div>
             </div>
@@ -104,29 +110,21 @@
 
     <section id="content3" class="h-[2500px]">
         <div class="sticky top-0 overflow-hidden">
-            <div class="grid h-dvh flex justify-center items-center w-dvw p-2">
-                <div class="flex justify-center items-center mt-20 opacity-0 content3-item1">
-                    <div class="grid gap-10">
-                        <div class="flex justify-center">
-                            <p class="text-4xl text-center text-wrap">
-                                O que está incluso?
-                            </p>
-                        </div>
-                        <div class="flex justify-center">
-                            <p class="text-2xl w-[100vw] text-center font-light text-wrap">
-                                Você recebe uma landing page moderna, rápida e feita sob medida com:
-                            </p>
-                        </div>
-                    </div>
+            <div class="grid h-dvh flex justify-center items-center p-6">
+                <div class="flex justify-center items-center mt-30 opacity-0 content3-item1">
+                    <p class="text-2xl md:text-4xl text-center max-w-300">
+                        ⚙️ Sistemas Web Sob Medida
+                    </p>
                 </div>
-
-                <div class="flex justify-center items-center mt-20 opacity-0 content3-item2">
+                <div
+                    class="flex justify-center items-center opacity-0 border-2 rounded-lg border-gray-300 content3-item2">
+                    <img src="img/dashboard.gif" class="w-[90%] lg:max-w-300 " alt="">
+                </div>
+                <div class="flex justify-center items-center  opacity-0  mb-30 content3-item2">
                     <div>
-                        <div class="text-md md:text-xl ">🎬 Animações suaves ativadas ao rolar a página</div>
-                        <div class="text-md md:text-xl ">🖼️ Design responsivo (celular, tablet e desktop)</div>
-                        <div class="text-md md:text-xl ">⚙️ Otimização para SEO e performance</div>
-                        <div class="text-md md:text-xl ">📍 Foco total na conversão (captar leads ou contatos)</div>
-                        <div class="text-md md:text-xl ">🎨 Identidade visual adaptada à sua marca</div>
+                        <div class="text-md md:text-xl ">
+                            Dashboards, painéis administrativos, áreas de login, integrações e automações.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,27 +133,20 @@
 
     <section id="content4" class="h-[2500px]">
         <div class="sticky top-0 overflow-hidden">
-            <div class="grid h-dvh flex justify-center items-center w-dvw p-2">
-                <div class="flex justify-center items-center mt-20 opacity-0 content4-item1">
-                    <div class="grid gap-10">
-                        <p class="text-4xl text-center">
-                            Como funciona?
-                        </p>
-                    </div>
+            <div class="grid h-dvh flex justify-center items-center p-6">
+                <div class="flex justify-center items-center mt-30 opacity-0 content4-item1">
+                    <p class="text-2xl md:text-4xl text-center max-w-300">
+                        📲 Aplicativos Mobile
+                    </p>
                 </div>
-
-                <div class="flex justify-center items-center mt-20 opacity-0 content4-item2">
+                <div
+                    class="flex justify-center items-center opacity-0 border-2 rounded-lg border-gray-300 content4-item2">
+                    <img src="img/mobile.gif" class="w-[90%] lg:max-w-300 " alt="">
+                </div>
+                <div class="flex justify-center items-center  opacity-0  mb-30 content4-item2">
                     <div>
-                        <div class="text-md md:text-xl ">📞 Conversa rápida para entender seu negócio</div>
-                        <div class="text-md md:text-xl text-wrap ">✍️ Criação de layout exclusivo com sugestões de animação</div>
-                        <div class="text-md md:text-xl ">💻 Desenvolvimento da página (5 a 7 dias úteis)</div>
-                        <div class="text-md md:text-xl ">✅ Apoio com domínio e opções de hospedagem</div>
-
-                        <div class="flex justify-center">
-                            <a href="https://wa.me/5519971461355"
-                                class="text-sm md:text-3xl rounded-full p-6 bg-[#25d366] cursor-pointer mt-30">
-                                🎯 Quero uma landing page animada!
-                            </a>
+                        <div class="text-md md:text-xl ">
+                            Apps Android/iOS nativos ou híbridos com performance e design intuitivo.
                         </div>
                     </div>
                 </div>
@@ -165,16 +156,242 @@
 
     <section id="content5" class="h-[2500px]">
         <div class="sticky top-0 overflow-hidden">
+            <div class="grid h-dvh flex justify-center items-center p-6">
+                <div>
+                    <div class="flex justify-center items-center mt-30 opacity-0 content5-item1">
+                        <p class="text-2xl md:text-4xl text-center max-w-300">
+                            Para quem é
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center mt-30 opacity-0 content5-item1">
+                        <p class="text-2xl md:text-4xl font-thin text-center max-w-300">
+                            Atendo profissionais liberais, pequenas empresas, startups e agências que precisam de:
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center  opacity-0  mb-30 content5-item2">
+                    <div>
+                        <div class="text-md md:text-xl ">
+                            ✅ Uma presença digital moderna
+                        </div>
+                        <div class="text-md md:text-xl ">
+                            ✅ Um sistema eficiente para gerenciar processos
+                        </div>
+                        <div class="text-md md:text-xl ">
+                            ✅ Um app funcional para expandir o alcance
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content6" class="h-[2500px]">
+        <div class="sticky top-0 overflow-hidden">
+            <div class="grid h-dvh flex justify-center items-center p-6">
+                <div>
+                    <div class="flex justify-center items-center mt-30 opacity-0 content6-item1">
+                        <p class="text-2xl md:text-4xl text-center max-w-300">
+                            Diferenciais
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center  opacity-0  mb-30 content6-item2">
+                    <div>
+                        <div class="text-md md:text-xl ">
+                            🚀 Design moderno com animações no scroll
+                        </div>
+                        <div class="text-md md:text-xl ">
+                            🛠️ Desenvolvimento rápido e sob medida
+                        </div>
+                        <div class="text-md md:text-xl ">
+                            🔄 Integração com ferramentas (PagSeguro, WhatsApp, CRMs, etc.)
+                        </div>
+                        <div class="text-md md:text-xl ">
+                            📱 Performance mobile-first
+                        </div>
+                        <div class="text-md md:text-xl ">
+                            ✅ Entregas organizadas e com suporte
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content7" class="h-[2500px]">
+        <div class="sticky top-0 overflow-hidden">
+            <div class="grid h-dvh flex justify-center items-center p-6">
+                <div>
+                    <div class="flex justify-center items-center mt-30 opacity-0 content7-item1">
+                        <p class="text-2xl md:text-4xl text-center max-w-300">
+                            Como funciona?
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center  opacity-0  mb-30 content7-item2">
+                    <div>
+                        <div class="text-md md:text-xl ">
+                            📞 Reunião rápida para entender seu projeto
+                        </div>
+                        <div class="text-md md:text-xl ">
+                            ✍️ Definição de escopo e orçamento
+                        </div>
+                        <div class="text-md md:text-xl ">
+                            💻 Criação, ajustes e aprovação
+                        </div>
+                        <div class="text-md md:text-xl ">
+                            🚀 Entrega final com suporte pós-lançamento
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content-horizontal0" class="h-[8000px]">
+        <div class="sticky top-0 overflow-hidden">
+            <div class="h-dvh w-dvw bg-black relative">
+
+                <div class="absolute pt-20 lg:pt-30 w-dvw flex justify-center">
+                    <p class="text-white text-2xl md:text-4xl">Pacotes e valores</p>
+                </div>
+
+                <div class="flex items-center h-full">
+                    <div id="horizontal-wrapper" class="flex">
+
+                        <div class="pl-[50vw] h-full flex items-center justify-center">
+                            <div
+                                class="w-[90vw] h-[60vh] lg:w-120 lg:h-140 bg-gray-900 border-2 rounded-2xl border-gray-800 hover:scale-105 transition text-white relative">
+
+                                <div class="w-full flex justify-center p-10 text-3xl font-semibold">
+                                    Landing Page
+                                </div>
+                                <div class="w-full p-5 text-base text-base font-thin">
+                                    <div>
+                                        A partir de
+                                        <div class="text-3xl font-medium">
+                                            R$ 1.390,00
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-5">
+                                    <p>
+                                        ✅ Página única com animações.
+                                    </p>
+                                    <p>
+                                        ✅ Responsividade para diversos dispositivos.
+                                    </p>
+                                    <p>
+                                        ✅ Otimizada para conversão.
+                                    </p>
+                                </div>
+
+
+                                <div class="absolute bottom-0 w-full flex justify-center text-white p-5">
+                                    <a href=""
+                                        class="text-sm md:text-xl rounded-2xl p-2 px-5 bg-[#25d366] cursor-pointer">🚀
+                                        Solicitar Orçamento</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="pl-[50vw] h-full flex items-center justify-center">
+                            <div
+                                class="w-[90vw] h-[60vh] lg:w-120 lg:h-140 bg-gray-900 border-2 rounded-2xl border-gray-800 hover:scale-105 transition text-white relative">
+
+                                <div class="w-full flex justify-center p-10 text-3xl font-semibold">
+                                    Sistema Web Completo
+                                </div>
+                                <div class="w-full p-5 text-base text-base font-thin">
+                                    <div>
+                                        A partir de
+                                        <div class="text-3xl font-medium">
+                                            R$ 4.990,00
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-5">
+                                    <p>
+                                        ✅ Painel com login.
+                                    </p>
+                                    <p>
+                                        ✅ CRUDs.
+                                    </p>
+                                    <p>
+                                        ✅ Dashboards.
+                                    </p>
+                                    <p>
+                                        ✅ Integrações.
+                                    </p>
+                                </div>
+
+
+                                <div class="absolute bottom-0 w-full flex justify-center text-white p-5">
+                                    <a href=""
+                                        class="text-sm md:text-xl rounded-2xl p-2 px-5 bg-[#25d366] cursor-pointer">🚀
+                                        Solicitar Orçamento</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="pl-[50vw] h-full flex items-center justify-center">
+                            <div
+                                class="w-[90vw] h-[60vh] lg:w-120 lg:h-140 bg-gray-900 border-2 rounded-2xl border-gray-800 hover:scale-105 transition text-white relative">
+
+                                <div class="w-full flex justify-center p-10 text-3xl font-semibold">
+                                    Aplicativo Mobile
+                                </div>
+                                <div class="w-full p-5 text-base text-base font-thin">
+                                    <div>
+                                        A partir de
+                                        <div class="text-3xl font-medium">
+                                            R$ 6.490,00
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="p-5">
+                                    <p>
+                                        ✅ App Android/iOS com funcionalidades específicas do seu negócio.
+                                    </p>
+                                </div>
+
+
+                                <div class="absolute bottom-0 w-full flex justify-center text-white p-5">
+                                    <a href=""
+                                        class="text-sm md:text-xl rounded-2xl p-2 px-5 bg-[#25d366] cursor-pointer">🚀
+                                        Solicitar Orçamento</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="content8" class="h-[2500px]">
+        <div class="sticky top-0 overflow-hidden">
             <div class="bg-gray-200 h-dvh w-dvw pt-50">
                 <div class="flex justify-center">
                     <div class="w-[90%]">
-                        <div class="border-t-2 border-gray-300 pt-5 opacity-0 content5-item1">
+                        <div class="border-t-2 border-gray-300 pt-5 opacity-0 content8-item1">
                             <div class="text-nowrap text-4xl md:text-7xl font-thin mb-20 flex items-center">
                                 PIC <span class="text-4xl font-thin ml-5">•</span>
                             </div>
                         </div>
 
-                        <div class="grid gap-10 pt-10 opacity-0 content5-item2">
+                        <div class="grid gap-10 pt-10 opacity-0 content8-item2">
                             <div class="flex justify-center">
                                 <a href="https://wa.me/5519971461355"
                                     class="text-sm md:text-3xl rounded-full p-6 bg-[#25d366] cursor-pointer">
